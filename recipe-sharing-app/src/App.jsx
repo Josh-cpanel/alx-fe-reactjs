@@ -3,6 +3,26 @@ import RecipeList from './components/RecipeList'
 import AddRecipeForm from './components/AddRecipeForm'
 import RecipeDetails from './components/RecipeDetails'
 import EditRecipeForm from './components/EditRecipeForm'
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationsList';
+import SearchBar from './components/SearchBar';
+
+function App() {
+  return (
+    <div>
+      <h1>Recipe Sharing App</h1>
+
+      <SearchBar />
+      <AddRecipeForm />
+
+      <h2>All Recipes</h2>
+      <RecipeList />
+
+      <FavoritesList />
+      <RecommendationsList />
+    </div>
+  );
+}
 
 
 export default function App() {
